@@ -7,7 +7,11 @@ module HmctsCommonPlatform
     class CourtCentre
       include Queryable
 
-      has_attributes :oucode
+      has_attributes :oucode, :oucode_l2_code, :oucode_l3_name
+
+      def short_oucode
+        oucode[0..4]
+      end
 
       private
 
