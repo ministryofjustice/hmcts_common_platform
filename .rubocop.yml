@@ -4,6 +4,9 @@ require:
 Style/Documentation:
   Enabled: false
 
+Metrics/BlockLength:
+  Max: 40
+
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
 
