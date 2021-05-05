@@ -35,7 +35,7 @@ RSpec.describe HmctsCommonPlatform::Reference::CourtCentre do
     subject(:fetch_all) { described_class.all }
     it 'returns all CourtCentres' do
       expect(fetch_all).to all be_a(described_class)
-      expect(fetch_all.size).to eq(506)
+      expect(fetch_all.size).to eq(513)
     end
   end
 end
